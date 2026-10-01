@@ -1,0 +1,5 @@
+# Prevent missing hashed static chunks and missing well-known manifests from falling back to HTML 200
+/assets/*       /404  404
+/.well-known/*  /404  404
+/*              /index.html  200
+

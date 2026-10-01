@@ -1,0 +1,6 @@
+{
+  "name": "PantryPool",
+  "description": "Social inventory management and cost-splitting platform for tracking office and home consumables with friends and colleagues.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,123 @@
+import React from 'react';
+
+// Precision vector path from Style Guide Master (IMG_0078.PNG)
+const MASTER_ICON_PATH = 'M3252 5280 c-128 -11 -329 -47 -557 -99 -44 -11 -125 -29 -180 -41 -241 -51 -457 -107 -700 -179 -80 -24 -180 -53 -277 -80 -115 -31 -115 -32 -122 -163 -4 -62 -5 -498 -2 -968 5 -907 5 -910 54 -1090 54 -194 142 -363 276 -529 116 -143 380 -386 556 -511 70 -49 206 -138 263 -171 32 -19 71 -42 85 -51 15 -9 59 -35 97 -58 39 -23 82 -49 97 -58 15 -9 124 -73 243 -142 119 -69 228 -133 243 -143 15 -9 41 -24 57 -32 17 -8 46 -25 67 -37 20 -13 81 -49 135 -81 54 -32 118 -71 143 -87 25 -16 56 -35 70 -40 14 -6 32 -18 41 -26 29 -26 73 -20 136 21 32 21 74 48 93 60 19 12 49 30 65 41 50 31 67 41 140 79 39 20 86 47 107 58 20 12 86 51 148 87 62 36 128 75 148 88 21 12 46 27 57 32 11 6 40 24 65 40 36 23 161 98 258 155 24 14 326 217 382 257 25 17 59 41 75 52 202 142 431 351 508 466 20 30 51 75 68 100 34 48 149 266 149 282 0 6 7 24 15 42 8 17 27 76 42 131 27 100 27 100 30 1127 4 1023 4 1027 -17 1048 -11 11 -33 20 -49 20 -16 0 -42 5 -57 10 -47 18 -266 79 -374 104 -30 7 -80 20 -110 29 -30 9 -93 26 -140 38 -47 12 -115 30 -152 40 -36 11 -73 19 -80 19 -8 0 -44 8 -79 19 -108 32 -356 82 -570 116 -370 58 -721 -38 -995 -273 -86 -73 -227 -281 -271 -397 -33 -89 -56 -172 -57 -210 -1 -34 2 -40 24 -46 137 -38 206 -65 315 -121 33 -17 76 -39 96 -49 19 -10 41 -25 49 -33 20 -25 45 -19 108 23 101 68 206 116 332 152 41 12 81 27 88 34 10 9 8 29 -12 108 -34 129 -61 210 -81 241 -20 31 -12 62 18 70 34 9 224 6 297 -4 137 -20 258 -40 320 -54 73 -17 137 -31 225 -50 58 -13 108 -26 245 -67 36 -11 70 -19 75 -19 10 0 87 -22 210 -60 33 -10 72 -21 87 -24 15 -4 32 -15 38 -26 15 -29 16 -1473 0 -1560 -13 -73 -51 -192 -84 -260 -73 -150 -206 -298 -436 -484 -108 -88 -274 -205 -330 -234 -31 -16 -61 -34 -120 -72 -25 -16 -74 -46 -108 -67 -35 -21 -76 -46 -90 -55 -15 -9 -58 -35 -97 -58 -38 -23 -85 -50 -102 -61 -18 -11 -37 -18 -43 -14 -13 8 -14 754 -1 774 7 11 37 15 118 16 284 5 504 93 670 268 37 39 82 92 98 117 48 72 104 194 127 278 42 152 21 470 -37 582 -8 16 -15 35 -15 42 0 26 -104 172 -177 249 -65 68 -196 169 -220 169 -4 0 -19 6 -33 13 -14 7 -65 26 -115 42 -86 28 -98 30 -260 29 -181 0 -217 -8 -370 -75 -166 -73 -336 -244 -433 -435 -46 -90 -71 -189 -107 -415 -17 -108 -51 -178 -125 -249 -76 -75 -168 -110 -289 -110 -74 0 -91 4 -148 32 -182 89 -274 294 -215 478 31 96 88 166 177 219 51 30 158 61 210 61 59 0 169 -34 221 -69 56 -38 72 -39 79 -3 15 72 133 288 193 354 15 16 22 33 19 43 -8 20 -187 104 -302 141 -85 27 -99 29 -255 28 -150 -1 -172 -3 -240 -27 -131 -45 -226 -103 -324 -196 -144 -139 -261 -348 -288 -516 -7 -42 -14 -288 -17 -605 -7 -629 3 -591 -122 -458 -125 131 -224 294 -272 446 -20 65 -21 87 -25 859 -3 793 -3 793 20 802 13 5 57 19 98 31 41 12 104 30 140 41 36 11 72 19 80 19 8 0 47 9 85 19 39 11 108 29 155 41 47 12 117 30 155 40 75 20 194 48 315 74 41 9 139 23 218 30 165 15 164 14 256 146 95 134 250 286 332 325 23 11 34 22 32 33 -3 15 -27 17 -233 18 -127 1 -272 -2 -323 -6z m1391 -1626 c157 -40 255 -142 294 -302 16 -67 16 -75 -1 -154 -32 -149 -96 -235 -214 -291 -62 -29 -75 -32 -172 -32 -109 0 -159 15 -229 67 -24 18 -25 18 -47 -3 -13 -12 -27 -32 -30 -43 -8 -24 -71 -137 -122 -216 -19 -30 -82 -103 -139 -161 l-104 -107 2 -563 c2 -422 -1 -564 -10 -567 -6 -2 -35 12 -64 30 -48 32 -107 69 -149 93 -9 6 -83 48 -163 95 -81 47 -159 93 -173 102 -28 18 -81 50 -136 81 -17 10 -43 25 -58 35 -14 9 -71 43 -125 74 -175 102 -164 75 -163 386 1 148 5 274 10 281 6 10 25 6 86 -18 85 -33 277 -73 322 -66 15 2 72 9 127 16 212 25 369 102 511 251 114 119 181 239 225 406 10 41 21 77 23 80 2 4 9 52 15 107 22 194 61 274 177 363 89 68 190 86 307 56z';
+
+interface PantryPoolIconProps {
+  className?: string;
+  size?: number | string;
+  variant?: 'charcoal' | 'badge' | 'white' | 'terracotta' | 'duotone';
+}
+
+export const PantryPoolIcon: React.FC<PantryPoolIconProps> = ({
+  className = 'w-6 h-6',
+  size,
+  variant = 'charcoal'
+}) => {
+  const style = size ? { width: size, height: size } : undefined;
+
+  if (variant === 'badge') {
+    return (
+      <div 
+        className={`rounded-xl bg-[#D46238] flex items-center justify-center p-1.5 shadow-xs ${className}`}
+        style={style}
+      >
+        <svg 
+          viewBox="0 0 750 720" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+        >
+          <g transform="translate(0, 720) scale(0.1, -0.1)">
+            <path d={MASTER_ICON_PATH} fill="#FFFFFF" fillRule="evenodd" />
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  const fillColor = 
+    variant === 'white' 
+      ? '#FFFFFF' 
+      : variant === 'terracotta' 
+      ? '#D46238' 
+      : '#232323';
+
+  return (
+    <svg 
+      viewBox="0 0 750 720" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      style={style}
+    >
+      <g transform="translate(0, 720) scale(0.1, -0.1)">
+        <path d={MASTER_ICON_PATH} fill={fillColor} fillRule="evenodd" />
+      </g>
+    </svg>
+  );
+};
+
+interface PantryPoolLogoProps {
+  className?: string;
+  iconSize?: number | string;
+  showSubtitle?: boolean;
+  subtitleText?: string;
+  subtitleClassName?: string;
+  badgeStyle?: boolean;
+  lightModeText?: boolean;
+  useImage?: boolean;
+}
+
+export const PantryPoolLogo: React.FC<PantryPoolLogoProps> = ({
+  className = '',
+  iconSize = 32,
+  showSubtitle = false,
+  subtitleText,
+  subtitleClassName = '',
+  badgeStyle = false,
+  lightModeText = false,
+  useImage = true,
+}) => {
+  const [imgError, setImgError] = React.useState(false);
+  const displaySubtitle = subtitleText ?? 'Breakroom & Home Ledger';
+  const sizeNum = typeof iconSize === 'number' ? `${iconSize}px` : iconSize;
+
+  return (
+    <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
+      {useImage && !imgError ? (
+        <img
+          src="/PantryPoolLogo.webp"
+          alt="PantryPool Application Logo"
+          className="shrink-0 rounded-lg object-contain shadow-2xs border border-black/5"
+          style={{ width: sizeNum, height: sizeNum }}
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.endsWith('/PantryPoolLogo.jpg')) {
+              target.src = '/PantryPoolLogo.jpg';
+            } else {
+              setImgError(true);
+            }
+          }}
+        />
+      ) : badgeStyle ? (
+        <PantryPoolIcon variant="badge" size={iconSize} />
+      ) : (
+        <div className="shrink-0 flex items-center justify-center">
+          <PantryPoolIcon variant={lightModeText ? 'white' : 'charcoal'} size={iconSize} />
+        </div>
+      )}
+      <div className="flex flex-col justify-center">
+        <div className="font-bold tracking-tight text-lg sm:text-xl leading-none flex items-center">
+          <span className={lightModeText ? 'text-white' : 'text-[#232323]'}>Pantry</span>
+          <span className={lightModeText ? 'text-[#FF8A65]' : 'text-[#C2410C]'}>Pool</span>
+        </div>
+        {showSubtitle && (
+          <span className={`text-[11px] font-medium leading-tight mt-0.5 ${lightModeText ? 'text-gray-400' : 'text-[#6B6B6B]'} ${subtitleClassName}`}>
+            {displaySubtitle}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+};

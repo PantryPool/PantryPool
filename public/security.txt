@@ -1,0 +1,16 @@
+# PantryPool Security Policy & Responsible Disclosure
+# RFC 9116: https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:security@pantrypool.com
+Contact: https://pantrypool.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://pantrypool.com/.well-known/security.txt
+Policy: https://pantrypool.com
+
+# Disclosure Policy:
+# We take the security of PantryPool seriously and appreciate coordinated vulnerability disclosure.
+# - PantryPool does NOT operate a paid bug bounty program and does NOT offer cash rewards, monetary compensation, or bounties of any kind.
+# - All security reports are voluntary coordinated disclosures.
+# - Please report security vulnerabilities with technical details and reproducible proof-of-concept steps to security@pantrypool.com.
+# - Do NOT perform denial-of-service attacks, automated scanning/scraping, social engineering, extortion, or disruption of user accounts.

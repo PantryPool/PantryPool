@@ -1,0 +1,56 @@
+# PantryPool Licensing Model
+
+PantryPool is distributed under a dual-licensing / source-available model:
+
+1. **Community Edition (Source-Available Core)**:
+   The core PantryPool application and single-tenant communal breakroom platform are licensed under the **Functional Source License, Version 1.1, MIT Future License (FSL-1.1-MIT)** below. You are free to view, modify, and self-host the community edition for internal household, office, or organization use without software fees. However, offering PantryPool as a competing hosted or managed cloud service is prohibited until the rolling 2-year Change Date, after which each release converts automatically to the MIT License.
+
+2. **Managed SaaS Cloud Fleet & Enterprise Modules**:
+   Certain enterprise-grade modules (multi-tenant fleet orchestration, automated SAML/OIDC SSO, and managed cloud billing pipelines) are proprietary to the PantryPool SaaS platform.
+
+---
+
+# Functional Source License, Version 1.1, MIT Future License
+## (FSL-1.1-MIT)
+
+Copyright (c) 2026 Donald Fellow & PantryPool Contributors
+
+### 1. Grant of License
+The Licensor hereby grants you the right to use, copy, modify, create derivative works based upon, and distribute the Software, subject to the terms of this agreement.
+
+### 2. Competing Use Limitation
+You may not make the Software available to third parties as a hosted or managed service, where the service provides, or could provide, the primary benefit of the Software, substantially similar to software-as-a-service.
+
+### 3. Change License
+On the Change Date (two years after the date the Licensor makes each release of the Software available under this License), this License will convert automatically to the MIT License, and the Licensor hereby grants you the rights to use the Software under the MIT License on and after the Change Date.
+
+### 4. Notice Requirements
+You must reproduce this license and copyright notice in all copies or substantial portions of the Software.
+
+### 5. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+## Appendix: Change License Text (Effective 2 Years After Release)
+### The MIT License
+
+Copyright (c) 2026 Donald Fellow & PantryPool Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

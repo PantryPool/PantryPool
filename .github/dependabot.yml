@@ -1,0 +1,66 @@
+version: 2
+updates:
+  # Enable version updates for npm packages
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      # Temporarily set to monthly and 0 open PRs to conserve end-of-month Actions minutes
+      interval: "monthly"
+    open-pull-requests-limit: 0
+    groups:
+      react-ecosystem:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+          - "@testing-library/react"
+      express-server:
+        patterns:
+          - "express"
+          - "@types/express"
+          - "express-rate-limit"
+          - "cors"
+          - "@types/cors"
+          - "helmet"
+          - "morgan"
+          - "@types/morgan"
+          - "cookie"
+          - "@types/cookie"
+          - "jsonwebtoken"
+          - "@types/jsonwebtoken"
+          - "bcryptjs"
+          - "@types/bcryptjs"
+      typescript-toolchain:
+        patterns:
+          - "typescript"
+          - "@types/node"
+          - "tsx"
+          - "esbuild"
+      vitest-testing:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/*"
+          - "jsdom"
+          - "supertest"
+          - "@types/supertest"
+      npm-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Enable version updates for GitHub Actions workflows
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Temporarily set to monthly and 0 open PRs to conserve end-of-month Actions minutes
+      interval: "monthly"
+    open-pull-requests-limit: 0
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+

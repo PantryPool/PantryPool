@@ -1,0 +1,51 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build & Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Audit Secret Fallbacks
+        run: |
+          echo "Scanning for forbidden fallback secrets..."
+          if grep -rn "pantrypool-edge-secure-jwt-secret" functions/ src/; then
+            echo "ERROR: Hardcoded JWT secret fallback detected in codebase!" && exit 1
+          fi
+          echo "Secret scan passed: 0 forbidden fallback secrets found."
+
+      - name: Run Type Check & Linting
+        run: npm run lint
+
+      - name: Run Automated Test Suite
+        run: npm test
+
+      - name: Build Application
+        env:
+          VITE_GOOGLE_CLIENT_ID: "mock-ci-client-id.apps.googleusercontent.com"
+        run: npm run build

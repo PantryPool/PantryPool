@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-bg-primary: #FAFAF8;
+  --color-bg-secondary: #F0EBE3;
+  --color-bg-tertiary: #E8E2D9;
+  --color-bg-elevated: #FFFFFF;
+  --color-bg-inverse: #2D2D2D;
+
+  --color-text-primary: #2D2D2D;
+  --color-text-secondary: #6B6B6B;
+  --color-text-tertiary: #9A9A9A;
+  --color-text-inverse: #FAFAF8;
+
+  --color-accent-primary: #E8694A;
+  --color-accent-primary-hover: #D45A3D;
+  --color-accent-primary-light: #FDF0EC;
+
+  --color-accent-secondary: #8FB8DE;
+  --color-accent-secondary-light: #EDF4FA;
+
+  --color-positive: #5A9A6B;
+  --color-positive-light: #EDF5EF;
+  --color-negative: #C9553D;
+  --color-negative-light: #FDF0EC;
+  --color-warning: #D4870E;
+  --color-warning-light: #FFF8EB;
+
+  --color-border-primary: #E0DAD1;
+  --color-border-secondary: #EDE8E0;
+  --color-border-focus: #E8694A;
+
+  --shadow-sm: 0 1px 2px rgba(45, 45, 45, 0.04);
+  --shadow-md: 0 2px 8px rgba(45, 45, 45, 0.06), 0 1px 2px rgba(45, 45, 45, 0.04);
+  --shadow-lg: 0 4px 16px rgba(45, 45, 45, 0.08), 0 2px 4px rgba(45, 45, 45, 0.04);
+  --shadow-xl: 0 8px 32px rgba(45, 45, 45, 0.10), 0 2px 8px rgba(45, 45, 45, 0.04);
+}
+
+@layer base {
+  :root, html {
+    color-scheme: light;
+    background-color: #FAFAF8;
+    color: #2D2D2D;
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: #FAFAF8;
+    color: #2D2D2D;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background-color: #FDF0EC;
+    color: #E8694A;
+  }
+}
+
+.font-mono-financial {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+
+.card {
+  background-color: var(--color-bg-secondary);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card-elevated {
+  background-color: var(--color-bg-elevated);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+  background-color: var(--color-accent-primary);
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-border-primary);
+  color: var(--color-text-primary);
+  border-radius: 9999px;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+}
+
+.section-sand {
+  background-color: var(--color-bg-secondary);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Print optimizations */
+@media print {
+  body, html {
+    background-color: #ffffff !important;
+    color: #2D2D2D !important;
+  }
+  
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* GPU-accelerated CSS animations for zero-overhead main thread execution */
+@keyframes laserSweep {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(220px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-laser {
+  animation: laserSweep 3.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+.animate-float {
+  animation: subtleFloat 5s ease-in-out infinite;
+}
+
+@keyframes subtleFloatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(8px) rotate(-1.5deg); }
+}
+
+.animate-float-reverse {
+  animation: subtleFloatReverse 6s ease-in-out infinite;
+}
+
+

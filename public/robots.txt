@@ -1,0 +1,10 @@
+# PantryPool Robots Configuration
+# https://pantrypool.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+# Sitemaps
+Sitemap: https://pantrypool.com/sitemap.xml

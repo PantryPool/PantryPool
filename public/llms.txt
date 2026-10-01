@@ -1,0 +1,25 @@
+# PantryPool
+
+> Smart app for office snack clubs, coffee clubs, soda funds, and breakrooms. Eliminate unpaid tabs, messy receipts, and food fund disputes with automated inventory, QR fridge posters, and multimodal AI receipt scanning.
+
+## Platform Documentation & Guides
+- [PantryPool Overview](/index.md): Full platform overview, architecture, feature capabilities, solutions for snack clubs, coffee clubs, soda clubs, and breakrooms.
+- [Pantry Organization Products](/organize): Curated airtight containers, modular organizers, and storage essentials to keep breakrooms organized.
+- [Subscription Tiers & Features](/pricing): Free community edition ($0) vs. Hosted Standard ($5/mo or $49/yr), Hosted Plus ($12/mo or $119/yr), and Enterprise custom tiers.
+- [Affiliate Organizing Catalog](/affiliate-products): Catalog of breakroom pantry organizers, spice racks, and airtight storage systems.
+- [System Health & Status](/api/health): SRE operational health check and database connectivity endpoint.
+
+## Primary Solutions & Target Use Cases
+- **Office Snack Club, Coffee Club & Soda Club**: Run self-funding workplace snack clubs, coffee clubs, cold brew taps, and soda funds with printable QR posters and automated balance tracking.
+- **Office Breakroom Snack Tracker & Food Fund**: Replace honor cash jars and messy spreadsheets with printable QR fridge posters and automated running balances.
+- **Roommate & Household Grocery Expense Ledger**: Fairly share cooking essentials, split grocery receipts with AI vision, and settle up via Venmo/Cash App.
+- **Coworking & Maker Space Honor Bar**: Micro-market kiosk experience without expensive POS hardware or card terminals.
+- **Splitwise Alternative for Communal Food**: Tailored for per-item consumption, grocery line-item parsing, stock velocity, and non-custodial tabs.
+
+## Key Capabilities
+- **Printable QR Fridge Posters**: Instant camera scan opens a zero-app mobile web kiosk to log drinks & snacks in under 2 seconds.
+- **Multimodal Gemini AI Receipt Scanner**: Parse Costco, Trader Joe's, and grocery receipts down to the penny and credit buyer balances automatically.
+- **Non-Custodial Balance Ledger**: 1-tap Venmo, Cash App, and PayPal peer-to-peer settle up links.
+- **NFC Shelf Tag Logging**: Contactless tap logging on drink coolers and snack shelves.
+- **Collaborative Shopping Polls**: Propose items, upvote snacks, and eliminate breakroom food waste.
+- **2-Way Slack Alerts & Friday Digests**: Automated low-stock alerts and weekly balance summaries.
